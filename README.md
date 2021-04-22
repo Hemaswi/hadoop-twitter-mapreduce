@@ -36,7 +36,7 @@ hadoop jar ./hadoop-3.3.0/share/hadoop/tools/lib/hadoop-streaming-3.3.0.jar \
 -input input/sample-data \
 -mapper ./tweetMapper.py \
 -reducer ./tweetReducer.py \
--output tweetanalytics -file *.py
+-output output -file *.py
 
 
 hdfs dfs -cat output/* 
